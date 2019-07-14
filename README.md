@@ -36,9 +36,9 @@ https://data.waag.org/api/getAllSensors
 }]
 ```
 
-### getAllStations
+### getStations
 ```
-https://data.waag.org/api/getAllStations
+https://data.waag.org/api/getStations
 ```
 ```json
 [{
