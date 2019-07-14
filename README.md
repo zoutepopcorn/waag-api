@@ -1,7 +1,59 @@
 # waag-api
 
 
-# example api url 
+# getAllSensors
+```
+https://data.waag.org/api/getAllSensors
+```
+```json
+[{
+  "time": "2019-07-14T09:14:18.823Z",
+  "pm25_last": 0.9,
+  "pm25_mean": 0.95,
+  "pm25_min": 0.6,
+  "pm25_max": 1.2,
+  "pm10_last": 3.9,
+  "pm10_mean": 3.7045000000000003,
+  "pm10_min": 1.8,
+  "pm10_max": 7.1,
+  "no2a_last": null,
+  "no2a_mean": null,
+  "no2a_min": null,
+  "no2a_max": null,
+  "no2b_last": null,
+  "no2b_mean": null,
+  "no2b_min": null,
+  "no2b_max": null,
+  "temperature_last": 19.65,
+  "temperature_mean": 19.2335,
+  "temperature_min": 17.38,
+  "temperature_max": 20.51,
+  "humidity_last": 54.35,
+  "humidity_mean": 88.50899999999999,
+  "humidity_min": 53.59,
+  "humidity_max": 655.35,
+  "id": "10"
+}]
+```
+
+# getAllStations
+```
+https://data.waag.org/api/getAllStations
+```
+```json
+[{
+  "id": 52,
+  "latitude": 52.495931,
+  "longitude": 4.595755,
+  "extended": false,
+  "tag": "Wijk aan Zee",
+  "name": "Stetweg"
+}]
+```
+
+
+
+# getOfficialMeasurement
 ```
 https://data.waag.org/api/getOfficialMeasurement?formula=PM25&start=2019-07-03T17:00:00.000Z&end=2019-07-03T17:00:00.000Z&station_id=NL49007&station_id=NL49017&station_id=NL49012&station_id=NL49014&station_id=NL49016&station_id=NL49561&station_id=NL49570&station_id=NL49556&station_id=NL49551&station_id=NL49703&station_id=NL49573&station_id=NL49572&station_id=NL49553&station_id=NL49701&station_id=NL49704&station_id=NL10538
 ```
@@ -19,160 +71,6 @@ https://data.waag.org/api/getOfficialMeasurement?formula=PM25&start=2019-07-03T1
          4.773
       ],
       "name":"Zaanstad-Hoogtij"
-   },
-   {  
-      "station_number":"NL49703",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":6.4,
-      "formula":"PM25",
-      "coordinates":[  
-         52.398437,
-         4.728581
-      ],
-      "name":"Spaarnwoude-Machineweg"
-   },
-   {  
-      "station_number":"NL49701",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":2,
-      "formula":"PM25",
-      "coordinates":[  
-         52.448011,
-         4.816706
-      ],
-      "name":"Zaandam-Wagenschotpad"
-   },
-   {  
-      "station_number":"NL49573",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":5.8,
-      "formula":"PM25",
-      "coordinates":[  
-         52.478871,
-         4.579343
-      ],
-      "name":"Velsen-Reyndersweg"
-   },
-   {  
-      "station_number":"NL49572",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":1.7,
-      "formula":"PM25",
-      "coordinates":[  
-         52.4744,
-         4.6288
-      ],
-      "name":"Velsen-Staalstraat"
-   },
-   {  
-      "station_number":"NL49570",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":2.1,
-      "formula":"PM25",
-      "coordinates":[  
-         52.489303,
-         4.640531
-      ],
-      "name":"Beverwijk-Creutzberglaan"
-   },
-   {  
-      "station_number":"NL49561",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":2.1,
-      "formula":"PM25",
-      "coordinates":[  
-         52.334003,
-         4.774006
-      ],
-      "name":"Badhoevedorp-Sloterweg"
-   },
-   {  
-      "station_number":"NL49556",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":5,
-      "formula":"PM25",
-      "coordinates":[  
-         52.56359,
-         4.8617
-      ],
-      "name":"De Rijp-Oostdijkje"
-   },
-   {  
-      "station_number":"NL49553",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":4.4,
-      "formula":"PM25",
-      "coordinates":[  
-         52.493992,
-         4.601986
-      ],
-      "name":"Wijk aan Zee-De Banjaert"
-   },
-   {  
-      "station_number":"NL49551",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":9,
-      "formula":"PM25",
-      "coordinates":[  
-         52.463039,
-         4.6018419999999995
-      ],
-      "name":"IJmuiden-Kanaalstraat"
-   },
-   {  
-      "station_number":"NL49017",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":2.8,
-      "formula":"PM25",
-      "coordinates":[  
-         52.358039,
-         4.8997
-      ],
-      "name":"Amsterdam-Stadhouderskade"
-   },
-   {  
-      "station_number":"NL49016",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":8.9,
-      "formula":"PM25",
-      "coordinates":[  
-         52.393972,
-         4.870157
-      ],
-      "name":"Amsterdam-Westerpark"
-   },
-   {  
-      "station_number":"NL49014",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":3.9,
-      "formula":"PM25",
-      "coordinates":[  
-         52.359714,
-         4.866208
-      ],
-      "name":"Amsterdam-Vondelpark"
-   },
-   {  
-      "station_number":"NL49012",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":3.9,
-      "formula":"PM25",
-      "coordinates":[  
-         52.389983,
-         4.887811
-      ],
-      "name":"Amsterdam-Van Diemenstraat"
-   },
-   {  
-      "station_number":"NL49007",
-      "timestamp_measured":"2019-07-03T17:00:00+00:00",
-      "value":5.5,
-      "formula":"PM25",
-      "coordinates":[  
-         52.381331,
-         4.845233
-      ],
-      "name":"Amsterdam-Einsteinweg"
    }
-]
+   ]
 ```
