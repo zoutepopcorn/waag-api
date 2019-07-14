@@ -1,7 +1,7 @@
 # waag-api
 
 
-# getAllSensors
+### getAllSensors
 ```
 https://data.waag.org/api/getAllSensors
 ```
@@ -36,7 +36,7 @@ https://data.waag.org/api/getAllSensors
 }]
 ```
 
-# getAllStations
+### getAllStations
 ```
 https://data.waag.org/api/getAllStations
 ```
@@ -53,12 +53,10 @@ https://data.waag.org/api/getAllStations
 
 
 
-# getOfficialMeasurement
+### getOfficialMeasurement
 ```
 https://data.waag.org/api/getOfficialMeasurement?formula=PM25&start=2019-07-03T17:00:00.000Z&end=2019-07-03T17:00:00.000Z&station_id=NL49007&station_id=NL49017&station_id=NL49012&station_id=NL49014&station_id=NL49016&station_id=NL49561&station_id=NL49570&station_id=NL49556&station_id=NL49551&station_id=NL49703&station_id=NL49573&station_id=NL49572&station_id=NL49553&station_id=NL49701&station_id=NL49704&station_id=NL10538
 ```
-
-### response
 ```
 [  
    {  
